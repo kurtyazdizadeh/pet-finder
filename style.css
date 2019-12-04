@@ -1,0 +1,11 @@
+body {
+  /* background-image: url("./images/pets_bg.png");
+  background-repeat: no-repeat;
+  backdrop-filter: blur(8px);
+  background-size: cover; */
+  color: black;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}

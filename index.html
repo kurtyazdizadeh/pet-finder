@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Focused JavaScript | Module 2</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <!-- Bootstrap & core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="my-4 text-center text-lg-left">Rent-a-Pet</h1>
+    <h6>Rent a pet a day and forever happy you will stay</h6>
+
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="typeInput">Type</label>
+          <select class="form-control" id="typeInput">
+            <option value="" selected>- All -</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="breedInput">Breed</label>
+          <select class="form-control" id="breedInput">
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="sizeInput">Size</label>
+          <select class="form-control" id="sizeInput">
+            <option value="">- All -</option>
+            <option value="small">small</option>
+            <option value="medium">medium</option>
+            <option value="large">large</option>
+            <option value="xlarge">x-large</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="ageInput">Age</label>
+          <select class="form-control" id="ageInput">
+            <option value="">- All -</option>
+            <option value="baby">baby</option>
+            <option value="young">young</option>
+            <option value="adult">adult</option>
+            <option value="senior">senior</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="zipInput">Postal Code</label>
+          <input class="form-control" id="zipInput" placeholder="enter postal code">
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-primary btn-search">Search</button>
+    </form>
+
+    <div class="row text-center text-lg-left mt-5">
+      <div class="col-9">
+        <div class="container">
+          <!-- container starts as empty. -->
+          <div class="row">
+            <div class="col"></div>
+            <div class="col">Name</div>
+            <div class="col">Breed</div>
+            <div class="col">Size</div>
+            <div class="col">Age</div>
+          </div>
+          <div class="pet-list">
+
+                        <!-- <div class="row" data-toggle="collapse" data-target=".pet-1">
+                            <div class="col"><img src="photos[0].small" class="img-thumbnail"></img></div>
+                            <div class="col">name</div>
+                            <div class="col">breeds.primary</div>
+                            <div class="col">size</div>
+                            <div class="col">age</div>
+                        </div> -->
+
+          </div>
+          <div class="row">
+            <div class="col"><strong><span id="resultsLabel">0</span> results:</strong> (page <span
+                id="pageNumberLabel">0</span> of <span id="totalPagesLabel">0</span>)</div>
+            <div class="col offset-5">
+              <div class="btn-group">
+                <button type="button" disabled class="btn btn-warning btn-previous">&lt;&lt; Previous</button>
+                <button type="button" disabled class="btn btn-success btn-next">Next &gt;&gt;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 detail-area">
+        <div class="card" style="width:300px">
+          <img class="card-img-top" src="https://www.donorschoose.org/teacher/photo/u705748?size=retina&t=1517498408638"
+            alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Rosco</h4>
+            <p class="card-text card-text-scrollable">Adopt Rosco TODAY!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="components/list.js"></script>
+  <script src="components/animal.js"></script>
+  <script src="components/main.js"></script>
+</body>
+
+</html>
